@@ -1,0 +1,25 @@
+<div class="container">
+    <form class="form-horizontal" id="checkin_form" {{action 'createCheckin' on='submit' }}>
+        <fieldset>
+            <div class="form-group">
+                <label class="col-lg-2 control-label" for="username">Username</label>
+                <div class="col-lg-10">
+                    {{input type="text" class="form-control" value=username id="username" placeholder="Enter your username"}}
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label" for="location_name">Location name</label>
+                <div class="col-lg-10">
+                    {{input type="text" class="form-control" value=location_name id="location_name" placeholder="Enter the name of the place you are at"}}
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <button class="btn btn-success" type="submit">checkin</button> {{link-to "Cancelar" "checkins.index" class="cancel btn btn-danger"}}
+                </div>
+            </div>
+
+        </fieldset>
+
+    </form>
+</div>

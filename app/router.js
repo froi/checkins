@@ -2,10 +2,14 @@ import Ember from 'ember';
 import config from './config/environment';
 
 var Router = Ember.Router.extend({
-  location: config.locationType
+    location: config.locationType
 });
 
 Router.map(function() {
+    this.resource('checkins', {path:'/'}, function() {
+        this.route('index', {path: '/'});
+        this.route('new');
+    });
 });
 
 export default Router;

@@ -17,4 +17,27 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
+app.import('bower_components/bootstrap/dist/css/bootstrap-theme.css.map');
+app.import('bower_components/bootstrap/dist/css/bootstrap-theme.min.css');
+
+app.import('bower_components/bootstrap/dist/css/bootstrap.css.map');
+app.import('bower_components/bootstrap/dist/css/bootstrap.min.css');
+
+app.import('bower_components/bootstrap-material-design/dist/css/material-wfont.min.css');
+app.import('bower_components/bootstrap-material-design/dist/css/material-wfont.min.css.map');
+
+app.import('bower_components/bootstrap-material-design/dist/css/material.min.css');
+app.import('bower_components/bootstrap-material-design/dist/css/material.min.css.map');
+
+app.import('bower_components/bootstrap-material-design/dist/css/ripples.min.css');
+app.import('bower_components/bootstrap-material-design/dist/css/ripples.min.css.map');
+
+app.import('bower_components/bootstrap/dist/js/bootstrap.min.js');
+
+app.import('bower_components/bootstrap-material-design/dist/js/material.min.js');
+app.import('bower_components/bootstrap-material-design/dist/js/material.min.js.map');
+
+app.import('bower_components/bootstrap-material-design/dist/js/ripples.min.js');
+app.import('bower_components/bootstrap-material-design/dist/js/ripples.min.js.map');
+
 module.exports = app.toTree();

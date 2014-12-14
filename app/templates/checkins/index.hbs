@@ -1,0 +1,25 @@
+<div class="container">
+    <div>{{link-to "Checkin" "checkins.new" class="btn btn-success btn-raised btn-full-width"}}</div>
+    <div class="table-responsive table-container">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Location Name</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each checkin in model}}
+                    <tr>
+                        <td> {{checkin.username}} </td>
+                        <td> {{checkin.locationName}} </td>
+                        <td> {{checkin.lat}} </td>
+                        <td> {{checkin.lon}} </td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>
