@@ -1,9 +1,8 @@
-<<<<<<< HEAD
-# Checkins2
+# Checkins
 
 This README outlines the details of collaborating on this Ember application.
 
-Simple app to learn Ember.js and Firebase.
+Simple app to learn Ember.js and Firebase. The user inputs his username and a name for the location he'she is att and once save is clicked the geolocation API found in the browser is used to get the user's coordinates and save them in Firebase.
 
 ## Prerequisites
 
